@@ -1,0 +1,19 @@
+#spring??
+spring:
+  #1.????
+  application:
+    name: Absence #?????
+  #2.??????
+  datasource:
+    url: jdbc:mysql://localhost:3306/act?useUnicode=true&characterEncoding=utf8
+    username : root
+    password : root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  activiti:
+    history-level: full
+    db-history-used: true
+#????
+server:
+  port: 9009
+
