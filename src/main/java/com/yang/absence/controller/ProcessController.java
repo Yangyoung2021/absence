@@ -3,13 +3,12 @@ package com.yang.absence.controller;
 import com.yang.absence.entity.Result;
 import com.yang.absence.entity.ResultCode;
 import com.yang.absence.exception.BusinessException;
-import com.yang.absence.service.ProcessService;
+import com.yang.absence.service.impl.ProcessServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.io.IOException;
 
@@ -24,7 +23,7 @@ import java.io.IOException;
 public class ProcessController {
 
 	@Autowired
-	private ProcessService processService;
+	private ProcessServiceImpl processService;
 	private static final String COMPANY_ID = "XYY";
 
 	/**
@@ -47,7 +46,7 @@ public class ProcessController {
 			throw new BusinessException("测试异常信息！");
 		}
 		if ("未知异常".equals(message)) {
-			int a = 1 / 0;
+			throw new RuntimeException();
 		}
 		return new Result(ResultCode.SUCCESS);
 	}
