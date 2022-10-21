@@ -29,6 +29,15 @@ public class Result {
     }
 
     /**
+     * 没有参数需要回显的请求
+     *
+     * @param msg 返回消息
+     */
+    public Result(String msg){
+        this(ResultCode.SUCCESS.getCode(), msg, null);
+    }
+
+    /**
      * 指定状态的返回码和返回数据
      *
      * @param resultCode 返回码信息
