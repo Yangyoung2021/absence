@@ -2,6 +2,7 @@ package com.yang.absence.controller;
 
 import com.yang.absence.entity.Result;
 import com.yang.absence.entity.ResultCode;
+import com.yang.absence.exception.BusinessException;
 import com.yang.absence.service.ProcessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +32,17 @@ public class ProcessController {
 	@PostMapping(value = "/deploy")
 	public Result deployProcess(@RequestParam("file") MultipartFile file) throws IOException {
 		processService.deployProcess(file,COMPANY_ID);
+		return new Result(ResultCode.SUCCESS);
+	}
+
+	@GetMapping(value = "/test")
+	public Result test(@RequestParam("file") String message) {
+		if ("测试".equals(message)) {
+			throw new BusinessException("测试异常信息！");
+		}
+		if ("未知异常".equals(message)) {
+			int a = 1 / 0;
+		}
 		return new Result(ResultCode.SUCCESS);
 	}
 }

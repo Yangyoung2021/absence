@@ -14,17 +14,49 @@ public class Result {
 
     private String msg;
 
+    private Object data;
+
     public Result(){}
 
+    /**
+     * 没有参数需要回显的请求
+     *
+     * @param resultCode 请求结果
+     */
     public Result(ResultCode resultCode){
         this.code = resultCode.getCode();
         this.msg = resultCode.getMsg();
     }
 
-    public Result(int code, String msg) {
-        this.code = code;
-        this.msg = msg;
+    /**
+     * 指定状态的返回码和返回数据
+     *
+     * @param resultCode 返回码信息
+     * @param data 返回数据
+     */
+    public Result(ResultCode resultCode, Object data){
+        this(resultCode.getCode(), resultCode.getMsg(), data);
     }
 
+    /**
+     * 自定义的返回码和提示信息
+     *
+     * @param code 返回码
+     * @param msg 提示信息
+     * @param data 返回数据
+     */
+    public Result(int code, String msg, Object data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+    }
 
+    /**
+     * 成功且有回显数据的结果
+     *
+     * @param data 返回数据
+     */
+    public Result(Object data) {
+        this(ResultCode.SUCCESS, data);
+    }
 }
