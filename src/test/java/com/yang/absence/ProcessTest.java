@@ -37,4 +37,21 @@ public class ProcessTest {
             log.info("processDefinition.ResourceName() --> {}", processDefinition.getResourceName());
         }
     }
+
+    @Test
+    void testSuspendDefinition() {
+        ProcessDefinitionQuery processDefinitionQuery = repositoryService.createProcessDefinitionQuery();
+        List<ProcessDefinition> definitionList =
+                processDefinitionQuery.processDefinitionTenantId("XYY").latestVersion().list();
+        for (ProcessDefinition definition : definitionList) {
+            boolean isSuspend = repositoryService.isProcessDefinitionSuspended(definition.getId());
+            if (!isSuspend) {
+                repositoryService.suspendProcessDefinitionById(definition.getId());
+                log.info("挂起{}的{}流程", definition.getTenantId(), definition.getName());
+            } else {
+                repositoryService.activateProcessDefinitionById(definition.getId());
+                log.info("激活{}的{}流程", definition.getTenantId(), definition.getName());
+            }
+        }
+    }
 }

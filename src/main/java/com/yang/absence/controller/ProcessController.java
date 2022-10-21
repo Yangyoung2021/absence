@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * 流程控制的controller
@@ -37,6 +38,25 @@ public class ProcessController {
 	public Result deployProcess(@RequestParam("file") MultipartFile file) throws IOException {
 		processService.deployProcess(file,COMPANY_ID);
 		return new Result(ResultCode.SUCCESS);
+	}
+
+	/**
+	 * 查询登录用户对应的所有流程
+	 */
+	@GetMapping(value = "/processDefinitionList")
+	@ApiOperation(value = "查询流程定义列表")
+	public Result processDefinitionList(@RequestParam("tenantId") String tenantId) {
+		return new Result(processService.processDefinitionList(tenantId));
+	}
+
+	/**
+	 * 修改某个流程的状态
+	 */
+	@GetMapping(value = "/updateProcessStatus")
+	@ApiOperation(value = "查询流程定义列表")
+	public Result updateProcessStatus(List<String> processDefinitionIds) {
+		processService.updateProcessStatus(processDefinitionIds, COMPANY_ID);
+		return new Result();
 	}
 
 	@GetMapping(value = "/test")

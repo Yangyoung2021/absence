@@ -16,7 +16,9 @@ public class Result {
 
     private Object data;
 
-    public Result(){}
+    public Result(){
+        this(ResultCode.SUCCESS);
+    }
 
     /**
      * 没有参数需要回显的请求
