@@ -27,7 +27,7 @@ public class GlobalExceptionInterceptor  {
     @ResponseBody
     @ExceptionHandler(value = BusinessException.class)
     public Result handleServiceException(BusinessException e){
-        log.info("出现业务异常：", e);
+        log.error("出现业务异常", e);
         return new Result(ResultCode.ERROR, e.getMessage());
     }
 
@@ -39,7 +39,7 @@ public class GlobalExceptionInterceptor  {
     @ResponseBody
     @ExceptionHandler(value = RuntimeException.class)
     public Result handleArgsException(RuntimeException e){
-        log.info("未知异常：", e);
+        log.error("未知异常", e);
         return new Result(ResultCode.ERROR, "内部异常！");
     }
 }

@@ -4,9 +4,12 @@ import com.yang.absence.entity.Result;
 import com.yang.absence.entity.ResultCode;
 import com.yang.absence.exception.BusinessException;
 import com.yang.absence.service.ProcessService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.io.IOException;
 
@@ -16,6 +19,7 @@ import java.io.IOException;
  */
 @CrossOrigin
 @RestController
+@Api(tags = "请假流程")
 @RequestMapping(value="/user/process")
 public class ProcessController {
 
@@ -30,13 +34,15 @@ public class ProcessController {
 	 *          MultipartFile
 	 */
 	@PostMapping(value = "/deploy")
+	@ApiOperation(value = "流程部署接口", tags = "流程部署")
 	public Result deployProcess(@RequestParam("file") MultipartFile file) throws IOException {
 		processService.deployProcess(file,COMPANY_ID);
 		return new Result(ResultCode.SUCCESS);
 	}
 
 	@GetMapping(value = "/test")
-	public Result test(@RequestParam("file") String message) {
+	@ApiOperation(value = "测试统一处理接口", tags = "测试统一处理接口")
+	public Result test(@RequestParam("message") String message) {
 		if ("测试".equals(message)) {
 			throw new BusinessException("测试异常信息！");
 		}
