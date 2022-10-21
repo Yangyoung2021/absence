@@ -52,7 +52,7 @@ public class ProcessController {
 	/**
 	 * 修改某个流程的状态
 	 */
-	@GetMapping(value = "/updateProcessStatus")
+	@PutMapping(value = "/updateProcessStatus")
 	@ApiOperation(value = "更新指定的流程状态")
 	public Result updateProcessStatus(@RequestParam List<String> processDefinitionIds) {
 		processService.updateProcessStatus(processDefinitionIds, COMPANY_ID);
