@@ -14,7 +14,6 @@ public enum ResultCode {
      * 未认证
      */
     UNAUTHORIZED(403, "未认证"),
-    SYS_SUCCESS(200, ""),
     SYS_INTERNAL_ERROR(120000100, "系统错误，请稍后重试"),
     SYS_PARAM_ERROR(120000101, "参数错误"),
     SYS_DATA_ERROR(120000102, "数据错误"),
