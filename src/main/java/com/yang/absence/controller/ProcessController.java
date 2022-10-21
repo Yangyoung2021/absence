@@ -34,14 +34,14 @@ public class ProcessController {
 	 *          MultipartFile
 	 */
 	@PostMapping(value = "/deploy")
-	@ApiOperation(value = "流程部署接口", tags = "流程部署")
+	@ApiOperation(value = "流程部署接口")
 	public Result deployProcess(@RequestParam("file") MultipartFile file) throws IOException {
 		processService.deployProcess(file,COMPANY_ID);
 		return new Result(ResultCode.SUCCESS);
 	}
 
 	@GetMapping(value = "/test")
-	@ApiOperation(value = "测试统一处理接口", tags = "测试统一处理接口")
+	@ApiOperation(value = "测试统一处理接口")
 	public Result test(@RequestParam("message") String message) {
 		if ("测试".equals(message)) {
 			throw new BusinessException("测试异常信息！");
