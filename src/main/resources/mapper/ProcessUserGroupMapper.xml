@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yang.absence.mapper.ProcessUserGroupMapper">
+
+    <!--查询所有用户分组信息-->
+    <select id="listAllGroup" resultType="com.yang.absence.entity.ProcessUserGroup">
+        select * from test.process_user_group;
+    </select>
+</mapper>
