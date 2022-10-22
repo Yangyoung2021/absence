@@ -22,7 +22,7 @@ spring:
   # 添加统一的servlet的访问路径，在tomcat的路径之后拼接
   mvc:
     servlet:
-      path: /test
+      path: /v1
 #????
 server:
   port: 9009
