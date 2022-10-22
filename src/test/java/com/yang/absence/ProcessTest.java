@@ -54,4 +54,20 @@ public class ProcessTest {
             }
         }
     }
+
+    @Test
+    void testGetProcessDefinitionByKey() {
+        ProcessDefinitionQuery processDefinitionQuery = repositoryService.createProcessDefinitionQuery();
+        List<ProcessDefinition> absence = processDefinitionQuery.processDefinitionKey("Absence").latestVersion().list();
+        for (ProcessDefinition definition : absence) {
+            boolean isSuspend = repositoryService.isProcessDefinitionSuspended(definition.getId());
+            if (!isSuspend) {
+                repositoryService.suspendProcessDefinitionById(definition.getId());
+                log.info("挂起{}的{}流程", definition.getTenantId(), definition.getName());
+            } else {
+                repositoryService.activateProcessDefinitionById(definition.getId());
+                log.info("激活{}的{}流程", definition.getTenantId(), definition.getName());
+            }
+        }
+    }
 }
