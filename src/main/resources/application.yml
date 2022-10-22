@@ -23,6 +23,9 @@ spring:
   mvc:
     servlet:
       path: /v1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 #????
 server:
   port: 9009

@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 public class Result {
-
+    private static final long serialVersionUID = -124249374690L;
     private int code;
 
     private String msg;

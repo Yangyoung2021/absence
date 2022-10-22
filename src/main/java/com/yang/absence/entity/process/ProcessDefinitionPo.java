@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 public class ProcessDefinitionPo {
-
+    private static final long serialVersionUID = -1243306307174690L;
     private String id;
     private String name;
     private String tenantId;

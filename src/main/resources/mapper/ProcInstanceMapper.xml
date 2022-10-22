@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yang.absence.mapper.ProcInstanceMapper">
+    <resultMap type="com.yang.absence.entity.process.ProcInstance" id="ProcInstanceMap">
+        <result property="procId" column="proc_id" jdbcType="VARCHAR"/>
+        <result property="procDefinitionId" column="proc_definition_id" jdbcType="VARCHAR"/>
+        <result property="procKey" column="proc_key" jdbcType="VARCHAR"/>
+        <result property="procName" column="proc_name" jdbcType="VARCHAR"/>
+        <result property="procState" column="proc_state" jdbcType="VARCHAR"/>
+        <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="deptId" column="dept_id" jdbcType="VARCHAR"/>
+        <result property="deptName" column="dept_name" jdbcType="VARCHAR"/>
+        <result property="timeOfEntry" column="time_of_entry" />
+        <result property="procCurrNodeUserId" column="proc_curr_node_user_id" jdbcType="VARCHAR"/>
+        <result property="procCurrNodeUserName" column="proc_curr_node_user_name" jdbcType="VARCHAR"/>
+        <result property="procApplyTime" column="proc_apply_time" />
+        <result property="procEndTime" column="proc_end_time" />
+        <result property="procData" column="proc_data" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <!-- 通过ID查询单条数据 -->
+    <select id="queryById" resultMap="ProcInstanceMap">
+        select
+            proc_id,proc_definition_id,proc_key,proc_name,proc_state,user_id,username,dept_id,dept_name,time_of_entry,proc_curr_node_user_id,proc_curr_node_user_name,proc_apply_time,proc_end_time,proc_data
+        from test.proc_instance
+        where proc_id = #{procId}
+    </select>
+    
+    <!--分页查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ProcInstanceMap">
+        select
+            proc_id,proc_definition_id,proc_key,proc_name,proc_state,user_id,username,dept_id,dept_name,time_of_entry,proc_curr_node_user_id,proc_curr_node_user_name,proc_apply_time,proc_end_time,proc_data
+        from test.proc_instance
+        <where>
+            <if test="param.procId != null and param.procId != ''">
+                and proc_id = #{param.procId}
+            </if>
+            <if test="param.procDefinitionId != null and param.procDefinitionId != ''">
+                and proc_definition_id = #{param.procDefinitionId}
+            </if>
+            <if test="param.procKey != null and param.procKey != ''">
+                and proc_key = #{param.procKey}
+            </if>
+            <if test="param.procName != null and param.procName != ''">
+                and proc_name = #{param.procName}
+            </if>
+            <if test="param.procState != null and param.procState != ''">
+                and proc_state = #{param.procState}
+            </if>
+            <if test="param.userId != null and param.userId != ''">
+                and user_id = #{param.userId}
+            </if>
+            <if test="param.username != null and param.username != ''">
+                and username = #{param.username}
+            </if>
+            <if test="param.deptId != null and param.deptId != ''">
+                and dept_id = #{param.deptId}
+            </if>
+            <if test="param.deptName != null and param.deptName != ''">
+                and dept_name = #{param.deptName}
+            </if>
+            <if test="param.procCurrNodeUserId != null and param.procCurrNodeUserId != ''">
+                and proc_curr_node_user_id = #{param.procCurrNodeUserId}
+            </if>
+            <if test="param.procCurrNodeUserName != null and param.procCurrNodeUserName != ''">
+                and proc_curr_node_user_name = #{param.procCurrNodeUserName}
+            </if>
+            <if test="param.procApplyTime != null and param.procApplyTime != ''">
+                and proc_apply_time = #{param.procApplyTime}
+            </if>
+            <if test="param.procEndTime != null and param.procEndTime != ''">
+                and proc_end_time = #{param.procEndTime}
+            </if>
+            <if test="param.procData != null and param.procData != ''">
+                and proc_data = #{param.procData}
+            </if>
+        </where>
+        order by #{param.sortBy}
+        limit #{startIndex}, #{size}
+    </select>
+    
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from test.proc_instance
+        <where>
+            <if test="procId != null and procId != ''">
+                and proc_id = #{procId}
+            </if>
+            <if test="procDefinitionId != null and procDefinitionId != ''">
+                and proc_definition_id = #{procDefinitionId}
+            </if>
+            <if test="procKey != null and procKey != ''">
+                and proc_key = #{procKey}
+            </if>
+            <if test="procName != null and procName != ''">
+                and proc_name = #{procName}
+            </if>
+            <if test="procState != null and procState != ''">
+                and proc_state = #{procState}
+            </if>
+            <if test="userId != null and userId != ''">
+                and user_id = #{userId}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="deptId != null and deptId != ''">
+                and dept_id = #{deptId}
+            </if>
+            <if test="deptName != null and deptName != ''">
+                and dept_name = #{deptName}
+            </if>
+            <if test="timeOfEntry != null and timeOfEntry != ''">
+                and time_of_entry = #{timeOfEntry}
+            </if>
+            <if test="procCurrNodeUserId != null and procCurrNodeUserId != ''">
+                and proc_curr_node_user_id = #{procCurrNodeUserId}
+            </if>
+            <if test="procCurrNodeUserName != null and procCurrNodeUserName != ''">
+                and proc_curr_node_user_name = #{procCurrNodeUserName}
+            </if>
+            <if test="procApplyTime != null and procApplyTime != ''">
+                and proc_apply_time = #{procApplyTime}
+            </if>
+            <if test="procEndTime != null and procEndTime != ''">
+                and proc_end_time = #{procEndTime}
+            </if>
+            <if test="procData != null and procData != ''">
+                and proc_data = #{procData}
+            </if>
+        </where>
+    </select>
+    
+    <!--新增数据-->
+    <insert id="insert" keyProperty="proc_id" useGeneratedKeys="true">
+        insert into test.proc_instance(proc_id,proc_definition_id,proc_key,proc_name,proc_state,user_id,username,dept_id,dept_name,time_of_entry,proc_curr_node_user_id,proc_curr_node_user_name,proc_apply_time,proc_end_time,proc_data)
+        values (#{procId},#{procDefinitionId},#{procKey},#{procName},#{procState},#{userId},#{username},#{deptId},#{deptName},#{timeOfEntry},#{procCurrNodeUserId},#{procCurrNodeUserName},#{procApplyTime},#{procEndTime},#{procData})
+    </insert>
+    
+    <!-- 批量新增数据 -->
+    <insert id="insertBatch" keyProperty="proc_id" useGeneratedKeys="true">
+        insert into test.proc_instance(proc_id,proc_definition_id,proc_key,proc_name,proc_state,user_id,username,dept_id,dept_name,time_of_entry,proc_curr_node_user_id,proc_curr_node_user_name,proc_apply_time,proc_end_time,proc_data)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.procId},#{entity.procDefinitionId},#{entity.procKey},#{entity.procName},#{entity.procState},#{entity.userId},#{entity.username},#{entity.deptId},#{entity.deptName},#{entity.timeOfEntry},#{entity.procCurrNodeUserId},#{entity.procCurrNodeUserName},#{entity.procApplyTime},#{entity.procEndTime},#{entity.procData})
+        </foreach>
+    </insert>
+    
+    <!-- 批量新增或按主键更新数据 -->
+    <insert id="insertOrUpdateBatch" keyProperty="proc_id" useGeneratedKeys="true">
+        insert into test.proc_instance(proc_id,proc_definition_id,proc_key,proc_name,proc_state,user_id,username,dept_id,dept_name,time_of_entry,proc_curr_node_user_id,proc_curr_node_user_name,proc_apply_time,proc_end_time,proc_data)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.procId},#{entity.procDefinitionId},#{entity.procKey},#{entity.procName},#{entity.procState},#{entity.userId},#{entity.username},#{entity.deptId},#{entity.deptName},#{entity.timeOfEntry},#{entity.procCurrNodeUserId},#{entity.procCurrNodeUserName},#{entity.procApplyTime},#{entity.procEndTime},#{entity.procData})
+        </foreach>
+        on duplicate key update
+        proc_id=values(proc_id),
+		proc_definition_id=values(proc_definition_id),
+		proc_key=values(proc_key),
+		proc_name=values(proc_name),
+		proc_state=values(proc_state),
+		user_id=values(user_id),
+		username=values(username),
+		dept_id=values(dept_id),
+		dept_name=values(dept_name),
+		time_of_entry=values(time_of_entry),
+		proc_curr_node_user_id=values(proc_curr_node_user_id),
+		proc_curr_node_user_name=values(proc_curr_node_user_name),
+		proc_apply_time=values(proc_apply_time),
+		proc_end_time=values(proc_end_time),
+		proc_data=values(proc_data)
+    </insert>
+    
+    <!-- 更新数据 -->
+    <update id="update">
+        update test.proc_instance
+        <set>
+            <if test="procId != null and procId != ''">
+                proc_id = #{procId},
+            </if>
+            <if test="procDefinitionId != null and procDefinitionId != ''">
+                proc_definition_id = #{procDefinitionId},
+            </if>
+            <if test="procKey != null and procKey != ''">
+                proc_key = #{procKey},
+            </if>
+            <if test="procName != null and procName != ''">
+                proc_name = #{procName},
+            </if>
+            <if test="procState != null and procState != ''">
+                proc_state = #{procState},
+            </if>
+            <if test="userId != null and userId != ''">
+                user_id = #{userId},
+            </if>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="deptId != null and deptId != ''">
+                dept_id = #{deptId},
+            </if>
+            <if test="deptName != null and deptName != ''">
+                dept_name = #{deptName},
+            </if>
+            <if test="timeOfEntry != null and timeOfEntry != ''">
+                time_of_entry = #{timeOfEntry},
+            </if>
+            <if test="procCurrNodeUserId != null and procCurrNodeUserId != ''">
+                proc_curr_node_user_id = #{procCurrNodeUserId},
+            </if>
+            <if test="procCurrNodeUserName != null and procCurrNodeUserName != ''">
+                proc_curr_node_user_name = #{procCurrNodeUserName},
+            </if>
+            <if test="procApplyTime != null and procApplyTime != ''">
+                proc_apply_time = #{procApplyTime},
+            </if>
+            <if test="procEndTime != null and procEndTime != ''">
+                proc_end_time = #{procEndTime},
+            </if>
+            <if test="procData != null and procData != ''">
+                proc_data = #{procData},
+            </if>
+        </set>
+        where proc_id = #{procId}
+    </update>
+    
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from test.proc_instance where proc_id = #{procId}
+    </delete>
+</mapper>
