@@ -5,17 +5,32 @@ spring:
     name: Absence #?????
   #2.??????
   datasource:
-    url: jdbc:mysql://localhost:3306/workflow?useUnicode=true&characterEncoding=utf8
-    username : root
-    password : root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    workflow:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/workflow?useUnicode=true&characterEncoding=utf8
+      username : root
+      password : root
+    test:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
 
   activiti:
     history-level: full
     db-history-used: true
+  # 添加统一的servlet的访问路径，在tomcat的路径之后拼接
+  mvc:
+    servlet:
+      path: /test
 #????
 server:
   port: 9009
+  # 配置tomcat的绝对路径
+  servlet:
+    context-path: /absence
+
+
 logging:
   level:
     root: info
