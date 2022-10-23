@@ -264,3 +264,232 @@ Using generated security password: c79acc36-1768-41a9-bea6-cb65aac35a08
 2022-10-23 23:30:47.137 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
 2022-10-23 23:30:47.142 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
 2022-10-23 23:30:47.145 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-23 23:48:18.810 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on DESKTOP-0PFIU54 with PID 23496 (D:\work\idea\Projects\Absence\target\classes started by 19816 in D:\work\idea\Projects\Absence)
+2022-10-23 23:48:18.812 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-23 23:48:20.216 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-23 23:48:20.227 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-10-23 23:48:20.432 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@c97721b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:48:20.434 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$3d502a5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:48:20.440 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:48:20.618 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-23 23:48:20.624 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:48:20.625 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-23 23:48:20.625 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-23 23:48:20.718 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-23 23:48:20.718 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1871 ms
+2022-10-23 23:48:21.203 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 73ecda05-4061-4538-ac26-6bc3f3927648
+
+2022-10-23 23:48:21.244 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-23 23:48:21.510 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-23 23:48:21.954 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-23 23:48:22.373 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-23 23:48:22.422 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-23 23:48:22.701 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-23 23:48:22.869 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28ceb25e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c382179, org.springframework.security.web.header.HeaderWriterFilter@5c16561a, org.springframework.security.web.authentication.logout.LogoutFilter@72c1bf75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15a2fddd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52f118aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e09e367, org.springframework.security.web.session.SessionManagementFilter@392ef4ff, org.springframework.security.web.access.ExceptionTranslationFilter@4b7a4c83]
+2022-10-23 23:48:22.888 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-23 23:48:23.319 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:48:23.333 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-23 23:48:23.335 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-23 23:48:23.348 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-23 23:48:23.376 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-23 23:48:23.485 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-23 23:48:23.487 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-23 23:48:23.489 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-23 23:48:23.490 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-23 23:48:23.492 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-23 23:48:23.518 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 5.056 seconds (JVM running for 6.071)
+2022-10-23 23:48:24.318 INFO  [RMI TCP Connection(3)-192.168.220.1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-23 23:48:24.318 INFO  [RMI TCP Connection(3)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-23 23:48:24.320 INFO  [RMI TCP Connection(2)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-2 - Starting...
+2022-10-23 23:48:24.320 INFO  [RMI TCP Connection(3)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2022-10-23 23:48:24.337 INFO  [RMI TCP Connection(2)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-2 - Start completed.
+2022-10-23 23:53:33.029 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-2 - Shutdown initiated...
+2022-10-23 23:53:33.037 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
+2022-10-23 23:53:33.041 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-23 23:53:33.043 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-23 23:53:38.527 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on DESKTOP-0PFIU54 with PID 29252 (D:\work\idea\Projects\Absence\target\classes started by 19816 in D:\work\idea\Projects\Absence)
+2022-10-23 23:53:38.532 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-23 23:53:40.007 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-23 23:53:40.027 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 17 ms. Found 0 JDBC repository interfaces.
+2022-10-23 23:53:40.221 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e03046d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:53:40.223 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$2c34b17b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:53:40.230 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:53:40.413 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-23 23:53:40.419 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:53:40.419 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-23 23:53:40.420 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-23 23:53:40.514 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-23 23:53:40.514 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1939 ms
+2022-10-23 23:53:40.973 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 0a7224c5-2774-4fd9-8434-44ed0d427ca9
+
+2022-10-23 23:53:41.095 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-23 23:53:41.412 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-23 23:53:41.897 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-23 23:53:42.306 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-23 23:53:42.363 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-23 23:53:42.701 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-23 23:53:42.902 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67f0bf7e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6219006a, org.springframework.security.web.header.HeaderWriterFilter@684f7f1c, org.springframework.security.web.authentication.logout.LogoutFilter@c247363, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bc41565, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3922b297, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e88e14, org.springframework.security.web.session.SessionManagementFilter@4be3de36, org.springframework.security.web.access.ExceptionTranslationFilter@5b657342]
+2022-10-23 23:53:42.926 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-23 23:53:43.386 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:53:43.400 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-23 23:53:43.401 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-23 23:53:43.416 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-23 23:53:43.443 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-23 23:53:43.564 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-23 23:53:43.565 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-23 23:53:43.568 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-23 23:53:43.569 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-23 23:53:43.571 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-23 23:53:43.595 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 5.428 seconds (JVM running for 6.482)
+2022-10-23 23:53:44.316 INFO  [RMI TCP Connection(4)-192.168.220.1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-23 23:53:44.316 INFO  [RMI TCP Connection(4)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-23 23:53:44.317 INFO  [RMI TCP Connection(4)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2022-10-23 23:53:44.317 INFO  [RMI TCP Connection(3)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-2 - Starting...
+2022-10-23 23:53:44.335 INFO  [RMI TCP Connection(3)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-2 - Start completed.
+2022-10-23 23:55:57.166 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-2 - Shutdown initiated...
+2022-10-23 23:55:57.173 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
+2022-10-23 23:55:57.176 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-23 23:55:57.182 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-23 23:56:02.310 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on DESKTOP-0PFIU54 with PID 23824 (D:\work\idea\Projects\Absence\target\classes started by 19816 in D:\work\idea\Projects\Absence)
+2022-10-23 23:56:02.312 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-23 23:56:03.736 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-23 23:56:03.747 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2022-10-23 23:56:03.955 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@21002393' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:03.958 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$dfbef3eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:03.964 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:04.145 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-23 23:56:04.152 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:56:04.153 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-23 23:56:04.153 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-23 23:56:04.248 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-23 23:56:04.248 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1900 ms
+2022-10-23 23:56:04.712 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 686849cb-e7a0-4758-9e02-1fbe845b2787
+
+2022-10-23 23:56:04.753 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-23 23:56:05.019 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-23 23:56:05.464 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-23 23:56:05.891 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-23 23:56:05.937 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-23 23:56:06.226 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-23 23:56:06.394 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51aaa9d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@570b85dd, org.springframework.security.web.header.HeaderWriterFilter@4bc41565, org.springframework.security.web.authentication.logout.LogoutFilter@7352418c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e09e367, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31fc658f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6292c63e, org.springframework.security.web.session.SessionManagementFilter@43a8bd35, org.springframework.security.web.access.ExceptionTranslationFilter@4be3de36]
+2022-10-23 23:56:06.415 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-23 23:56:06.896 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:56:06.918 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-23 23:56:06.920 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-23 23:56:06.934 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-23 23:56:06.963 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-23 23:56:07.076 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-23 23:56:07.077 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-23 23:56:07.080 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-23 23:56:07.081 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-23 23:56:07.082 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-23 23:56:07.110 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 5.153 seconds (JVM running for 6.113)
+2022-10-23 23:56:07.649 INFO  [RMI TCP Connection(2)-192.168.220.1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-23 23:56:07.649 INFO  [RMI TCP Connection(2)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-23 23:56:07.650 INFO  [RMI TCP Connection(1)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-2 - Starting...
+2022-10-23 23:56:07.651 INFO  [RMI TCP Connection(2)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 2 ms
+2022-10-23 23:56:07.671 INFO  [RMI TCP Connection(1)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-2 - Start completed.
+2022-10-23 23:56:23.099 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-2 - Shutdown initiated...
+2022-10-23 23:56:23.121 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
+2022-10-23 23:56:23.126 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-23 23:56:23.128 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-23 23:56:28.641 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on DESKTOP-0PFIU54 with PID 28992 (D:\work\idea\Projects\Absence\target\classes started by 19816 in D:\work\idea\Projects\Absence)
+2022-10-23 23:56:28.644 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-23 23:56:30.182 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-23 23:56:30.205 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-10-23 23:56:30.427 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@9b3be1c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:30.429 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$2c34b17b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:30.436 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:56:30.638 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-23 23:56:30.644 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:56:30.645 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-23 23:56:30.645 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-23 23:56:30.744 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-23 23:56:30.744 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 2057 ms
+2022-10-23 23:56:31.260 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 1b110785-922d-4bb4-ae06-6593a5dbff1a
+
+2022-10-23 23:56:31.305 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-23 23:56:31.588 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-23 23:56:32.092 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-23 23:56:32.540 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-23 23:56:32.590 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-23 23:56:32.909 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-23 23:56:33.099 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7352418c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d02a066, org.springframework.security.web.header.HeaderWriterFilter@4be3de36, org.springframework.security.web.authentication.logout.LogoutFilter@46ff1aad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43a8bd35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7253c53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60ba6631, org.springframework.security.web.session.SessionManagementFilter@647aa45c, org.springframework.security.web.access.ExceptionTranslationFilter@3294102e]
+2022-10-23 23:56:33.122 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-23 23:56:33.629 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:56:33.645 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-23 23:56:33.646 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-23 23:56:33.661 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-23 23:56:33.691 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-23 23:56:33.813 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-23 23:56:33.814 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-23 23:56:33.816 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-23 23:56:33.818 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-23 23:56:33.820 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-23 23:56:33.849 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 5.631 seconds (JVM running for 6.938)
+2022-10-23 23:56:34.558 INFO  [RMI TCP Connection(1)-192.168.220.1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-23 23:56:34.559 INFO  [RMI TCP Connection(1)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-23 23:56:34.561 INFO  [RMI TCP Connection(2)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-2 - Starting...
+2022-10-23 23:56:34.561 INFO  [RMI TCP Connection(1)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 2 ms
+2022-10-23 23:56:34.579 INFO  [RMI TCP Connection(2)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-2 - Start completed.
+2022-10-23 23:56:43.248 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(id=1, name=1, deptId=1, deptName=1)
+2022-10-23 23:56:43.338 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(id=1, name=1, deptId=1, deptName=1)
+2022-10-23 23:58:10.313 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-2 - Shutdown initiated...
+2022-10-23 23:58:10.320 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
+2022-10-23 23:58:10.324 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-23 23:58:10.330 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-23 23:58:15.348 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on DESKTOP-0PFIU54 with PID 26580 (D:\work\idea\Projects\Absence\target\classes started by 19816 in D:\work\idea\Projects\Absence)
+2022-10-23 23:58:15.350 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-23 23:58:16.792 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-23 23:58:16.805 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-10-23 23:58:17.012 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@9b3be1c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:58:17.014 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$2c34b17b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:58:17.021 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-23 23:58:17.246 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-23 23:58:17.251 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:58:17.252 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-23 23:58:17.252 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-23 23:58:17.342 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-23 23:58:17.343 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 1955 ms
+2022-10-23 23:58:17.851 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 984a75e2-0b68-4880-b11b-2ac99095979f
+
+2022-10-23 23:58:17.893 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-23 23:58:18.156 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-23 23:58:18.610 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-23 23:58:19.040 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-23 23:58:19.086 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-23 23:58:19.367 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-23 23:58:19.544 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7352418c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d02a066, org.springframework.security.web.header.HeaderWriterFilter@4be3de36, org.springframework.security.web.authentication.logout.LogoutFilter@46ff1aad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43a8bd35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7253c53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60ba6631, org.springframework.security.web.session.SessionManagementFilter@647aa45c, org.springframework.security.web.access.ExceptionTranslationFilter@3294102e]
+2022-10-23 23:58:19.563 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-23 23:58:19.991 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-23 23:58:20.004 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-23 23:58:20.005 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-23 23:58:20.019 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-23 23:58:20.042 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-23 23:58:20.142 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-23 23:58:20.143 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-23 23:58:20.146 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-23 23:58:20.147 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-23 23:58:20.148 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-23 23:58:20.172 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 5.151 seconds (JVM running for 6.343)
+2022-10-23 23:58:20.746 INFO  [RMI TCP Connection(2)-192.168.220.1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-23 23:58:20.746 INFO  [RMI TCP Connection(2)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-23 23:58:20.748 INFO  [RMI TCP Connection(1)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-2 - Starting...
+2022-10-23 23:58:20.748 INFO  [RMI TCP Connection(2)-192.168.220.1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2022-10-23 23:58:20.771 INFO  [RMI TCP Connection(1)-192.168.220.1]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-2 - Start completed.
+2022-10-23 23:58:24.018 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(id=1, name=1, deptId=1, deptName=1)，线程id38
+2022-10-23 23:58:24.249 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(id=1, name=1, deptId=1, deptName=1)，线程id38
+2022-10-23 23:59:04.975 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-2 - Shutdown initiated...
+2022-10-23 23:59:04.984 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
+2022-10-23 23:59:04.987 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-23 23:59:04.991 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
