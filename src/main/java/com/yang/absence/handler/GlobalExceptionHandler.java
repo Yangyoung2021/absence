@@ -1,4 +1,4 @@
-package com.yang.absence.interceptor;
+package com.yang.absence.handler;
 
 import com.yang.absence.entity.Result;
 import com.yang.absence.entity.ResultCode;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
 @ControllerAdvice
-public class GlobalExceptionInterceptor  {
+public class GlobalExceptionHandler {
 
     /**
      * 业务异常处理
