@@ -15,7 +15,7 @@ import java.util.Date;
  */
 @ApiModel(value = "流程实例对象",description = "流程实例对象")
 @Data
-public class ProcInstance implements Serializable{
+public class ProcInstancePO implements Serializable{
     private static final long serialVersionUID = -1242493306307174690L;
     /**  */
     @ApiModelProperty(name = "主键id",notes = "null")

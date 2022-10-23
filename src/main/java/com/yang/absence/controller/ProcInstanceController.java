@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.yang.absence.entity.process.ProcInstance;
+import com.yang.absence.entity.process.ProcInstancePO;
 import com.yang.absence.service.ProcInstanceService;
 
 /**
@@ -57,7 +57,7 @@ public class ProcInstanceController {
      */
     @ApiOperation("新增数据")
     @PostMapping
-    public Result add(@RequestBody ProcInstance procInstance) {
+    public Result add(@RequestBody ProcInstancePO procInstance) {
         procInstanceService.insert(procInstance);
         return new Result();
     }
@@ -70,7 +70,7 @@ public class ProcInstanceController {
      */
     @ApiOperation("更新数据")
     @PutMapping
-    public Result edit(@RequestBody ProcInstance procInstance) {
+    public Result edit(@RequestBody ProcInstancePO procInstance) {
         log.info("接收到的参数对象：{}", procInstance);
         procInstanceService.update(procInstance);
         return new Result();

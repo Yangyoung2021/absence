@@ -3,11 +3,9 @@ package com.yang.absence.mapper;
 import java.util.List;
 import java.util.Map;
 
-import com.yang.absence.entity.page.PageQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Pageable;
-import com.yang.absence.entity.process.ProcInstance;
+import com.yang.absence.entity.process.ProcInstancePO;
 
  /**
  * ;(proc_instance)表数据库访问层
@@ -22,7 +20,7 @@ public interface ProcInstanceMapper{
      * @param procId 主键
      * @return 实例对象
      */
-    ProcInstance queryById(String procId);
+    ProcInstancePO queryById(String procId);
 
      /**
       * 分页查询
@@ -31,9 +29,9 @@ public interface ProcInstanceMapper{
       * @param param 参数
       * @return 列表
       */
-    List<ProcInstance> queryAllByLimit(@Param("startIndex") int starIndex,
-                                       @Param("size") int size,
-                                       @Param("param") Map<String, Object> param);
+    List<ProcInstancePO> queryAllByLimit(@Param("startIndex") int starIndex,
+                                         @Param("size") int size,
+                                         @Param("param") Map<String, Object> param);
     /** 
      * 统计总行数
      *
@@ -47,28 +45,28 @@ public interface ProcInstanceMapper{
      * @param procInstance 实例对象
      * @return 影响行数
      */
-    int insert(ProcInstance procInstance);
+    int insert(ProcInstancePO procInstance);
     /** 
      * 批量新增数据
      *
      * @param entities List<ProcInstance> 实例对象列表
      * @return 影响行数
      */
-    int insertBatch(@Param("entities") List<ProcInstance> entities);
+    int insertBatch(@Param("entities") List<ProcInstancePO> entities);
     /** 
      * 批量新增或按主键更新数据
      *
      * @param entities List<ProcInstance> 实例对象列表
      * @return 影响行数
      */
-    int insertOrUpdateBatch(@Param("entities") List<ProcInstance> entities);
+    int insertOrUpdateBatch(@Param("entities") List<ProcInstancePO> entities);
     /** 
      * 更新数据
      *
      * @param procInstance 实例对象
      * @return 影响行数
      */
-    int update(ProcInstance procInstance);
+    int update(ProcInstancePO procInstance);
     /** 
      * 通过主键删除数据
      *

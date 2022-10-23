@@ -2,9 +2,7 @@ package com.yang.absence.service;
 
 import com.yang.absence.entity.page.PageQueryParam;
 import com.yang.absence.entity.page.PageResultVO;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import com.yang.absence.entity.process.ProcInstance;
+import com.yang.absence.entity.process.ProcInstancePO;
 
  /**
  * ;(proc_instance)表服务接口
@@ -18,26 +16,26 @@ public interface ProcInstanceService{
      * @param procId 主键
      * @return 实例对象
      */
-    ProcInstance queryById(String procId);
+    ProcInstancePO queryById(String procId);
     /** 
      * 分页查询
      *
      * @param pageQueryParam 筛选条件
      * @return 查询结果
      */
-    PageResultVO<ProcInstance> pageQuery(PageQueryParam pageQueryParam);
+    PageResultVO<ProcInstancePO> pageQuery(PageQueryParam pageQueryParam);
     /** 
      * 新增数据
      *
      * @param procInstance 实例对象
      */
-    void insert(ProcInstance procInstance);
+    void insert(ProcInstancePO procInstance);
     /** 
      * 更新数据
      *
      * @param procInstance 实例对象
      */
-    void update(ProcInstance procInstance);
+    void update(ProcInstancePO procInstance);
     /** 
      * 通过主键删除数据
      *
