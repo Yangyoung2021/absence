@@ -76,7 +76,9 @@
                 and proc_data = #{param.procData}
             </if>
         </where>
-        order by #{param.sortBy}
+        <if test="param.sortBy != null and param.sortBy != ''">
+            order by #{param.sortBy}
+        </if>
         limit #{startIndex}, #{size}
     </select>
     

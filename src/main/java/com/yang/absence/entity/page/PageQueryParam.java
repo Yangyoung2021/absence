@@ -1,6 +1,7 @@
 package com.yang.absence.entity.page;
 
 import lombok.Data;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;
 
@@ -16,4 +17,11 @@ public class PageQueryParam {
     private int size;
     private String sortBy;
     private Map<String, Object> param;
+
+    public Map<String, Object> getParam() {
+        if (StringUtils.isNotEmpty(sortBy)) {
+            param.put("sortBy", sortBy);
+        }
+        return param;
+    }
 }

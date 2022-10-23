@@ -26,8 +26,7 @@ public class Result {
      * @param resultCode 请求结果
      */
     public Result(ResultCode resultCode){
-        this.code = resultCode.getCode();
-        this.msg = resultCode.getMsg();
+        this(resultCode, null);
     }
 
     /**
