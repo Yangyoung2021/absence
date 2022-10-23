@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import com.yang.absence.entity.ProcTaskInstance;
+import com.yang.absence.entity.process.ProcTaskInstance;
 
 /**
  * 流程任务实例表;(proc_task_instance)表数据库访问层

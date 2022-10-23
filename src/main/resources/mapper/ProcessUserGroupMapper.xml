@@ -6,7 +6,7 @@
 <mapper namespace="com.yang.absence.mapper.ProcessUserGroupMapper">
 
     <!--查询所有用户分组信息-->
-    <select id="listAllGroup" resultType="com.yang.absence.entity.ProcessUserGroup">
+    <select id="listAllGroup" resultType="com.yang.absence.entity.process.ProcessUserGroup">
         select * from test.process_user_group;
     </select>
 </mapper>

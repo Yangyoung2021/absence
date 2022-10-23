@@ -2,7 +2,7 @@ package com.yang.absence.service;
 
 import com.yang.absence.entity.page.PageQueryParam;
 import com.yang.absence.entity.page.PageResultVO;
-import com.yang.absence.entity.ProcTaskInstance;
+import com.yang.absence.entity.process.ProcTaskInstance;
 
  /**
  * 流程任务实例表;(proc_task_instance)表服务接口

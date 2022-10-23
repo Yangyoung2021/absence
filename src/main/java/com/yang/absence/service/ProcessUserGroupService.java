@@ -1,6 +1,6 @@
 package com.yang.absence.service;
 
-import com.yang.absence.entity.ProcessUserGroup;
+import com.yang.absence.entity.process.ProcessUserGroup;
 
 import java.util.List;
 

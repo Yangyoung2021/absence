@@ -5,7 +5,7 @@ import com.yang.absence.entity.page.PageResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.yang.absence.entity.ProcTaskInstance;
+import com.yang.absence.entity.process.ProcTaskInstance;
 import com.yang.absence.mapper.ProcTaskInstanceMapper;
 import com.yang.absence.service.ProcTaskInstanceService;
 

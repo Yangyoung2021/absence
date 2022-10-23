@@ -1,7 +1,7 @@
 package com.yang.absence.mapper;
 
 
-import com.yang.absence.entity.ProcessUserGroup;
+import com.yang.absence.entity.process.ProcessUserGroup;
 
 import java.util.List;
 

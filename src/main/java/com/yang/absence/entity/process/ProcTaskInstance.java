@@ -1,4 +1,4 @@
-package com.yang.absence.entity;
+package com.yang.absence.entity.process;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -15,6 +15,7 @@ import java.util.Date;
 @ApiModel(value = "流程任务实例表",description = "流程任务实例表")
 @Data
 public class ProcTaskInstance implements Serializable {
+     private static final long serialVersionUID = 1242493306307174690L;
     /** 流程id */
     @ApiModelProperty(name = "流程id")
     private String processId ;

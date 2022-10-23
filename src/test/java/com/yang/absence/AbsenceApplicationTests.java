@@ -1,6 +1,6 @@
 package com.yang.absence;
 
-import com.yang.absence.entity.ProcessUserGroup;
+import com.yang.absence.entity.process.ProcessUserGroup;
 import com.yang.absence.mapper.ProcessUserGroupMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.activiti.engine.RepositoryService;

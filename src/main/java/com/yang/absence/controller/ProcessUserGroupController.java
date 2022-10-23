@@ -1,6 +1,5 @@
 package com.yang.absence.controller;
 
-import com.yang.absence.entity.ProcessUserGroup;
 import com.yang.absence.entity.Result;
 import com.yang.absence.service.ProcessUserGroupService;
 import io.swagger.annotations.Api;
@@ -9,8 +8,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * @author xiongyangyang
