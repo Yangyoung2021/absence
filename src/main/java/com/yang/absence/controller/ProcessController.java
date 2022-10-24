@@ -59,15 +59,4 @@ public class ProcessController {
 		return new Result();
 	}
 
-	@GetMapping(value = "/test")
-	@ApiOperation(value = "测试统一处理接口")
-	public Result test(@RequestParam("message") String message) {
-		if ("测试".equals(message)) {
-			throw new BusinessException("测试异常信息！");
-		}
-		if ("未知异常".equals(message)) {
-			throw new RuntimeException();
-		}
-		return new Result(ResultCode.SUCCESS);
-	}
 }
