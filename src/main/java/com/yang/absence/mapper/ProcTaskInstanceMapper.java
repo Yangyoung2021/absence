@@ -27,8 +27,8 @@ public interface ProcTaskInstanceMapper {
      * 分页查询数据
      *
      * @param starIndex 起始索引
-     * @param size 每页展示条数
-     * @param param 查询参数
+     * @param size      每页展示条数
+     * @param param     查询参数
      * @return 列表数据
      */
     List<ProcTaskInstance> queryAllByLimit(@Param("startIndex") int starIndex,
@@ -82,4 +82,12 @@ public interface ProcTaskInstanceMapper {
      * @return 影响行数
      */
     int deleteById(String taskId);
+
+    /**
+     * 通过用户id查询代办
+     *
+     * @param userId 登录用户id
+     * @return 代办列表
+     */
+    List<ProcTaskInstance> queryByUserId(String userId);
 }

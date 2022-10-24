@@ -1,8 +1,10 @@
 package com.yang.absence.controller;
 
-import com.yang.absence.entity.Result;
-import com.yang.absence.entity.ResultCode;
-import com.yang.absence.exception.BusinessException;
+import com.yang.absence.entity.common.Result;
+import com.yang.absence.entity.common.ResultCode;
+import com.yang.absence.entity.dto.TaskDTO;
+import com.yang.absence.entity.process.ProcInstancePO;
+import com.yang.absence.entity.process.ProcTaskInstance;
 import com.yang.absence.service.impl.ProcessServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -50,13 +52,43 @@ public class ProcessController {
 	}
 
 	/**
-	 * 修改某个流程的状态
+	 * 修改某个流程定义的状态
 	 */
 	@PutMapping(value = "/updateProcessStatus")
 	@ApiOperation(value = "更新指定的流程状态")
 	public Result updateProcessStatus(@RequestParam List<String> processDefinitionIds) {
 		processService.updateProcessStatus(processDefinitionIds, COMPANY_ID);
 		return new Result();
+	}
+
+	/**
+	 * 开始流程
+	 */
+	@PutMapping(value = "/startProcess")
+	@ApiOperation(value = "开始流程")
+	public Result startProcess(@RequestBody ProcInstancePO procInstance) {
+		processService.startProcess(procInstance);
+		return new Result();
+	}
+
+	/**
+	 * 完成任务
+	 */
+	@PutMapping(value = "/completeTasks")
+	@ApiOperation(value = "完成任务")
+	public Result completeTasks(@RequestParam List<TaskDTO> tasks) {
+		processService.completeTasks(tasks);
+		return new Result();
+	}
+
+	/**
+	 * 查询任务代办列表
+	 */
+	@PutMapping(value = "/taskList")
+	@ApiOperation(value = "查询任务代办列表")
+	public Result taskList(@RequestParam String userId) {
+		List<ProcTaskInstance> taskInstances = processService.taskList();
+		return new Result(taskInstances);
 	}
 
 }

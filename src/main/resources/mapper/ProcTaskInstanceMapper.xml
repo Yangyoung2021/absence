@@ -110,6 +110,11 @@
         </where>
     </select>
 
+    <!--通过用户id查询代办-->
+    <select id="queryByUserId" resultType="com.yang.absence.entity.process.ProcTaskInstance">
+        SELECT * FROM proc_task_instance where user_id = #{userId}
+    </select>
+
     <!--新增数据-->
     <insert id="insert" keyProperty="task_id" useGeneratedKeys="true">
         insert into test.proc_task_instance(process_id,task_id,task_key,task_name,should_user_id,should_user_name,handle_user_id,handle_user_name,handle_time,handle_opinion,handle_type)

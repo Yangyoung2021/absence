@@ -1,6 +1,6 @@
 package com.yang.absence.interceptor;
 
-import com.yang.absence.entity.LoginUser;
+import com.yang.absence.entity.common.LoginUser;
 import com.yang.absence.utils.LoginUserThreadLocal;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

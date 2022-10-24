@@ -493,3 +493,137 @@ Using generated security password: 984a75e2-0b68-4880-b11b-2ac99095979f
 2022-10-23 23:59:04.984 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-2 - Shutdown completed.
 2022-10-23 23:59:04.987 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
 2022-10-23 23:59:04.991 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-24 10:55:27.812 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on XIONGYANGYANG with PID 9588 (D:\xiongyangyang\Software\Idea\projects\absence\target\classes started by 19816 in D:\xiongyangyang\Software\Idea\projects\absence)
+2022-10-24 10:55:27.818 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-24 10:55:30.305 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-24 10:55:30.342 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+2022-10-24 10:55:30.969 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6ea3a513' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:55:30.969 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$313a95ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:55:30.990 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 10:55:31.929 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-24 10:55:31.945 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-24 10:55:31.945 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-24 10:55:31.945 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-24 10:55:32.114 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-24 10:55:32.114 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 4202 ms
+2022-10-24 10:55:33.258 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: c4d3600f-ea94-4243-bab6-f9b8051ac91e
+
+2022-10-24 10:55:33.440 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-24 10:55:33.842 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-24 10:55:34.606 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-24 10:55:35.608 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-24 10:55:35.747 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-24 10:55:36.480 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-24 10:55:36.997 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c0989f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ceeb592, org.springframework.security.web.header.HeaderWriterFilter@6f45be42, org.springframework.security.web.authentication.logout.LogoutFilter@57cfb4d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@332fc35c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2df40273, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@384b718c, org.springframework.security.web.session.SessionManagementFilter@2edc6690, org.springframework.security.web.access.ExceptionTranslationFilter@adb15df]
+2022-10-24 10:55:37.043 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-24 10:55:38.245 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-24 10:55:38.283 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-24 10:55:38.285 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-24 10:55:38.326 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-24 10:55:38.406 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-24 10:55:38.690 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-24 10:55:38.690 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-24 10:55:38.700 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-24 10:55:38.700 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-24 10:55:38.710 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-24 10:55:38.761 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 12.138 seconds (JVM running for 14.877)
+2022-10-24 10:56:20.457 INFO  [http-nio-9009-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-24 10:56:20.458 INFO  [http-nio-9009-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-24 10:56:20.459 INFO  [http-nio-9009-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2022-10-24 10:56:20.499 INFO  [http-nio-9009-exec-2]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：29
+2022-10-24 10:56:20.521 INFO  [http-nio-9009-exec-2]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：29
+2022-10-24 10:56:20.624 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：28
+2022-10-24 10:56:20.625 INFO  [http-nio-9009-exec-5]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：32
+2022-10-24 10:56:20.628 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:20.629 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:20.630 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 10:56:20.635 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:20.647 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：28
+2022-10-24 10:56:20.651 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:20.664 INFO  [http-nio-9009-exec-5]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：32
+2022-10-24 10:56:20.685 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 10:56:20.981 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:56:20.981 INFO  [http-nio-9009-exec-8]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：35
+2022-10-24 10:56:20.989 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:56:21.059 INFO  [http-nio-9009-exec-8]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：35
+2022-10-24 10:56:21.067 INFO  [http-nio-9009-exec-9]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：36
+2022-10-24 10:56:21.074 INFO  [http-nio-9009-exec-9]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：36
+2022-10-24 10:56:21.081 INFO  [http-nio-9009-exec-10]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：37
+2022-10-24 10:56:21.086 INFO  [http-nio-9009-exec-10]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：37
+2022-10-24 10:56:21.120 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:21.122 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:21.127 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:21.142 INFO  [http-nio-9009-exec-3]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：30
+2022-10-24 10:56:21.166 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：28
+2022-10-24 10:56:21.172 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:21.176 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：28
+2022-10-24 10:56:21.178 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:21.181 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:21.186 INFO  [http-nio-9009-exec-4]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：31
+2022-10-24 10:56:21.395 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 10:56:21.395 INFO  [http-nio-9009-exec-5]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：32
+2022-10-24 10:56:21.395 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:56:21.402 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:56:21.402 INFO  [http-nio-9009-exec-5]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：32
+2022-10-24 10:56:21.403 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 10:56:22.673 INFO  [http-nio-9009-exec-8]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：35
+2022-10-24 10:56:22.675 INFO  [http-nio-9009-exec-8]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：35
+2022-10-24 10:57:32.755 INFO  [http-nio-9009-exec-2]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：29
+2022-10-24 10:57:32.759 INFO  [http-nio-9009-exec-2]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：29
+2022-10-24 10:58:54.664 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:58:54.882 INFO  [http-nio-9009-exec-7]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：34
+2022-10-24 10:58:54.910 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 10:58:54.914 INFO  [http-nio-9009-exec-6]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：33
+2022-10-24 11:00:37.609 INFO  [http-nio-9009-exec-9]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：36
+2022-10-24 11:00:37.801 INFO  [http-nio-9009-exec-9]org.activiti.engine.impl.bpmn.deployer.BpmnDeployer.dispatchProcessDefinitionEntityInitializedEvent:218 -Process deployed: {id: Absence:1:0958d257-5348-11ed-8076-00ff3087861c, key: Absence}
+2022-10-24 11:00:37.835 INFO  [http-nio-9009-exec-9]com.yang.absence.service.impl.ProcessServiceImpl.deployProcess:85 -DeploymentEntity[id=093ff325-5348-11ed-8076-00ff3087861c, name=Absence.bpmn20.xml]
+2022-10-24 11:00:37.842 INFO  [http-nio-9009-exec-9]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：36
+2022-10-24 11:00:59.271 INFO  [http-nio-9009-exec-10]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：37
+2022-10-24 11:03:31.783 INFO  [http-nio-9009-exec-10]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：37
+2022-10-24 11:03:31.994 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-24 11:03:32.005 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.
+2022-10-24 11:04:12.312 INFO  [main]com.yang.absence.AbsenceApplication.logStarting:55 -Starting AbsenceApplication using Java 1.8.0_251 on XIONGYANGYANG with PID 7832 (D:\xiongyangyang\Software\Idea\projects\absence\target\classes started by 19816 in D:\xiongyangyang\Software\Idea\projects\absence)
+2022-10-24 11:04:12.312 INFO  [main]com.yang.absence.AbsenceApplication.logStartupProfileInfo:675 -No active profile set, falling back to default profiles: default
+2022-10-24 11:04:13.878 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:128 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-24 11:04:13.910 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:188 -Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2022-10-24 11:04:14.380 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b742bc8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 11:04:14.395 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$dbb4b02f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 11:04:14.417 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:376 -Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-24 11:04:14.952 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 9009 (http)
+2022-10-24 11:04:14.962 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-9009"]
+2022-10-24 11:04:14.962 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2022-10-24 11:04:14.962 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-10-24 11:04:15.119 INFO  [main]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring embedded WebApplicationContext
+2022-10-24 11:04:15.119 INFO  [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 2745 ms
+2022-10-24 11:04:15.900 INFO  [main]o.s.b.a.s.servlet.UserDetailsServiceAutoConfiguration.getOrDeducePassword:86 -
+
+Using generated security password: 5752faf6-a3ca-48e5-8dfd-2ad233ff7e6f
+
+2022-10-24 11:04:16.011 INFO  [main]org.activiti.spring.boot.ProcessDefinitionResourceFinder.discoverProcessDefinitionResources:52 -No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2022-10-24 11:04:16.290 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2022-10-24 11:04:16.933 INFO  [main]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2022-10-24 11:04:17.862 INFO  [main]o.a.e.c.DefaultActiviti5CompatibilityHandlerFactory.createActiviti5CompatibilityHandler:38 -Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2022-10-24 11:04:17.963 INFO  [main]org.activiti.engine.impl.ProcessEngineImpl.<init>:74 -ProcessEngine default created
+2022-10-24 11:04:18.588 INFO  [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:58 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-10-24 11:04:18.976 INFO  [main]o.s.security.web.DefaultSecurityFilterChain.<init>:51 -Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58e4aa67, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fccd98f, org.springframework.security.web.header.HeaderWriterFilter@62c42a3, org.springframework.security.web.authentication.logout.LogoutFilter@4e210016, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b30b6f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@261099e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57ed8f95, org.springframework.security.web.session.SessionManagementFilter@4b7c0f39, org.springframework.security.web.access.ExceptionTranslationFilter@192ecf8]
+2022-10-24 11:04:19.016 INFO  [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-10-24 11:04:20.145 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-9009"]
+2022-10-24 11:04:20.183 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 9009 (http) with context path '/absence'
+2022-10-24 11:04:20.183 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2022-10-24 11:04:20.230 INFO  [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2022-10-24 11:04:20.299 INFO  [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2022-10-24 11:04:20.537 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2022-10-24 11:04:20.547 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteByIdUsingDELETE_1
+2022-10-24 11:04:20.547 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: editUsingPUT_1
+2022-10-24 11:04:20.555 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: pageQueryUsingPOST_1
+2022-10-24 11:04:20.557 INFO  [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: queryByIdUsingGET_1
+2022-10-24 11:04:20.616 INFO  [main]com.yang.absence.AbsenceApplication.logStarted:61 -Started AbsenceApplication in 8.811 seconds (JVM running for 9.453)
+2022-10-24 11:04:34.512 INFO  [http-nio-9009-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/absence].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-24 11:04:34.512 INFO  [http-nio-9009-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2022-10-24 11:04:34.513 INFO  [http-nio-9009-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2022-10-24 11:04:34.535 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.preHandle:24 -获取登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：25
+2022-10-24 11:04:34.977 INFO  [http-nio-9009-exec-1]com.yang.absence.interceptor.GeneralAuthInterceptor.afterCompletion:32 -移除登录用户信息：LoginUser(userId=1, username=1, deptId=1, deptName=1)，线程id：25
+2022-10-24 11:08:13.617 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:350 -HikariPool-1 - Shutdown initiated...
+2022-10-24 11:08:13.633 INFO  [SpringContextShutdownHook]com.zaxxer.hikari.HikariDataSource.close:352 -HikariPool-1 - Shutdown completed.

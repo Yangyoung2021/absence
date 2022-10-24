@@ -1,4 +1,4 @@
-package com.yang.absence.entity;
+package com.yang.absence.entity.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LoginUser {
 
-    private String id;
-    private String name;
+    private String userId;
+    private String username;
     private String deptId;
     private String deptName;
 }

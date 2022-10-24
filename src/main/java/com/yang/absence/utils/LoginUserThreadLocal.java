@@ -1,6 +1,6 @@
 package com.yang.absence.utils;
 
-import com.yang.absence.entity.LoginUser;
+import com.yang.absence.entity.common.LoginUser;
 
 /**
  * @author xiongyangyang

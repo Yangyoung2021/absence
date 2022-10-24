@@ -1,7 +1,7 @@
 package com.yang.absence.handler;
 
-import com.yang.absence.entity.Result;
-import com.yang.absence.entity.ResultCode;
+import com.yang.absence.entity.common.Result;
+import com.yang.absence.entity.common.ResultCode;
 import com.yang.absence.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,4 +1,4 @@
-package com.yang.absence.entity;
+package com.yang.absence.entity.common;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package com.yang.absence.controller;
 
-import com.yang.absence.entity.Result;
+import com.yang.absence.entity.common.Result;
 import com.yang.absence.entity.page.PageQueryParam;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
