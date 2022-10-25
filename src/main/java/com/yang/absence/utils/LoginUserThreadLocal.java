@@ -10,17 +10,17 @@ import com.yang.absence.entity.common.LoginUser;
 public class LoginUserThreadLocal {
     private LoginUserThreadLocal() { }
 
-    private static final ThreadLocal<LoginUser> loginUserThreadLocal = new ThreadLocal<>();
+    private static final ThreadLocal<LoginUser> LOGIN_USER_THREAD_LOCAL = new ThreadLocal<>();
 
     public static void setLoginUser(LoginUser loginUser) {
-        loginUserThreadLocal.set(loginUser);
+        LOGIN_USER_THREAD_LOCAL.set(loginUser);
     }
 
     public static LoginUser getLoginUser() {
-        return loginUserThreadLocal.get();
+        return LOGIN_USER_THREAD_LOCAL.get();
     }
 
     public static void removeLoginUser() {
-        loginUserThreadLocal.remove();
+        LOGIN_USER_THREAD_LOCAL.remove();
     }
 }
